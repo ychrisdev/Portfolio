@@ -18,7 +18,7 @@ body {
   --LIGHT-COLOR: #fff;
   --DARK-COLOR: #000;
   --BLUE-COLOR: #1947bd;
-  --GRAY-COLOR: #333;
+  --GRAY-COLOR: #666666;
   --BORDER: 3px solid #374872;
 }
 
@@ -107,7 +107,7 @@ body {
 .contact-container h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: var(--BLUE-COLOR);
+  color: var(--DARK-COLOR);
 }
 
 .contact-container p {

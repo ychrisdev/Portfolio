@@ -18,7 +18,7 @@ body {
   --LIGHT-COLOR: #fff;
   --DARK-COLOR: #000;
   --BLUE-COLOR: #1947bd;
-  --GRAY-COLOR: #333;
+  --GRAY-COLOR: #666666;
   --BORDER: 3px solid #374872;
 }
 
@@ -93,6 +93,23 @@ main {
   width: 100%;
 }
 
+#extra-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+#extra-intro img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.avatar{
+  display: inline-block;
+}
+
 .intro {
   display: flex;
   justify-content: center;
@@ -106,25 +123,20 @@ main {
 #intro-text {
   flex: 1;
   font-size: 1.2rem;
-  width: 100px;
+  max-width: 1000px;
+  display: inline-block;
 }
 
-#intro-text h3 {
-  color: #143583;
+#intro-text h4 {
+  color: var(--GRAY-COLOR);
 }
 
 #intro-text h1 {
-  color: var(--BLUE-COLOR);
+  color: var(--DARK-COLOR);
 }
 
 #intro-text h2 {
-  color: #808080;
-}
-
-#intro-text p {
   color: var(--GRAY-COLOR);
-  max-width: 800px;
-  text-align: justify;
 }
 
 #intro-text .socials{
@@ -136,35 +148,36 @@ main {
   justify-content: space-evenly;
 }
 
-img {
-  height: auto;
-  width: 300px;
-  border-radius: 30px;
-  flex: 1;
-  margin-left: 0;
-  box-shadow: 0 -8px -20px var(--DARK-COLOR);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-contact {
+.intro-btn {
   display: flex;
   margin-top: 30px;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.btn-contact a {
+.intro-btn a {
   padding: 10px 20px;
   font-size: 1rem;
+  border: 2px solid var(--DARK-COLOR);
   border-radius: 10px;
-  background-color: var(--BLUE-COLOR);
-  color: var(--LIGHT-COLOR);
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-.btn-contact a:hover {
+.intro-btn a:hover {
   background-color: #4766b4;
+}
+
+#contactBtn{
+  background-color: var(--LIGHT-COLOR);
+  color: var(--DARK-COLOR);
+  font-weight: bold;
+}
+
+#projectsBtn{
+  background-color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
+  font-weight: bold;
 }
 
 .socials {
@@ -185,20 +198,46 @@ img {
 }
 
 .about {
-  background: linear-gradient(to bottom right, #f4f7fb, var(--LIGHT-COLOR));
   padding: 80px 100px;
   text-align: center;
   line-height: 1.8;
   color: var(--GRAY-COLOR);
 }
 
-.about h1 {
+.about #aboutMe {
   font-size: 2.8rem;
-  color: var(--BLUE-COLOR);
+  color: var(--DARK-COLOR);
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
-  border-bottom: 3px solid #374872;
+  border-bottom: 3px solid var(--DARK-COLOR);
+}
+
+.aboutDiv{
+  display: flex;
+  gap: 5em;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.experience{
+  display: inline-block;
+  border: 2px solid var(--GRAY-COLOR);
+  border-radius: 15px;
+  width: 500px;
+}
+.education{
+  display: inline-block;
+  border: 2px solid var(--GRAY-COLOR);
+  border-radius: 15px;
+  width: 500px;
+}
+.AboutH3{
+  color: var(--DARK-COLOR);
+  margin: 10px auto;
+}
+.AboutP{
+  color: var(--GRAY-COLOR);
 }
 
 .about p {
@@ -206,26 +245,24 @@ img {
   max-width: 900px;
   margin: 0 auto 20px;
   color: var(--GRAY-COLOR);
-  text-align: justify;
+  text-align: center;
   line-height: 1.7;
 }
 
 .skills {
   padding: 80px 300px;
   text-align: center;
-  background-color: var(--LIGHT-COLOR);
 }
 
 .skills-title {
   font-size: 2.5rem;
   position: relative;
   display: inline-block;
-  color: var(--BLUE-COLOR);
-  border-bottom: 3px solid #374872;
+  color: var(--DARK-COLOR);
+  border-bottom: 3px solid var(--GRAY-COLOR);
 }
 
 .skill-card {
-  background-color: var(--LIGHT-COLOR);
   padding: 30px;
   box-shadow: 0 -8px -20px var(--DARK-COLOR);
   width: 100%;
@@ -272,7 +309,7 @@ img {
 
 .skill-section h2 {
   font-size: 1.5rem;
-  color: var(--BLUE-COLOR);
+  color: var(--DARK-COLOR);
   margin-bottom: 15px;
   border-bottom: 2px solid #374872;
   padding-bottom: 5px;
