@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="header-container">
@@ -27,47 +29,43 @@
         <div class="intro">
             <div id="extra-intro">
                 <div id="avatar">
-                    <img src="img/scrap.jpg" alt="Avatar">
+                    <img src="img/preAvatar.jpg" alt="Avatar">
                 </div>
                 <div id="intro-text">
                     <h4>Hello, I'm</h4>
                     <h1>Tran Trong Phuc</h1>
                     <h2>Frontend Developer</h2>
+                    <p style="text-align: justify">
+                        Web developer in training, focused on building clean and user-friendly web experiences. Aspiring full-stack developer who learns through real-world projects.
+                    </p>
                     <div class="intro-btn">
                         <a id="contactBtn" href="contact.html">Contact Me</a>
-                        <a id="projectsBtn" href="Projects.html">See Projects</a>
+                        <a id="downloadBtn" href="">Download CV</a>
                     </div>
                     <div class="socials">
                         <a href="https://github.com/ychrisdev" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.facebook.com/YanjChris" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/chrissz_x/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <section id="about">
             <div class="about">
-                <p>Get To Know More</p>
                 <h1 id="aboutMe">About Me</h1>
                 <div class="aboutDiv">
                     <div class="experience">
-                        <p>Btn</p>
                         <h3 class="AboutH3">Experience</h3>
                         <p class="aboutP">1+ years</p>
                         <p class="aboutP">Frontend Development</p>
                     </div>
                     <div class="education">
-                        <p>Btn</p>
                         <h3 class="AboutH3">Education</h3>
                         <p class="aboutP">IT. Bachelors Degree</p>
                         <p class="aboutP">500 Toeic</p>
                     </div>
                 </div>
-                <p style="text-align: justify">
-                    I'm Tran Trong Phuc, a passionate web developer currently pursuing my studies while building real-world projects. I enjoy crafting clean, responsive, and interactive websites using modern tools and technologies.
-                    I'm always looking for new ways to improve my skills and explore different tech stacks.
-                    My goal is to become a full-stack developer and contribute to impactful, user-centered projects. I believe in continuous learning, collaboration, and building solutions that make a difference.
-                </p>
             </div>
         </section>
         <section id="skills">
@@ -139,35 +137,11 @@
                                             <div class="progress-text">70%</div>
                                         </div>
                                     </li>
-                                    <li class="skill-item" data-percentage="80">
-                                        <div class="skill-info">
-                                            <i class="fas fa-wind"></i>
-                                            <span>Tailwind</span>
-                                        </div>
-                                        <div class="skill-progress">
-                                            <div class="progress-bar">
-                                                <div class="progress-fill"></div>
-                                            </div>
-                                            <div class="progress-text">80%</div>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="skill-section">
                                 <h2>Backend</h2>
                                 <ul>
-                                    <li class="skill-item" data-percentage="85">
-                                        <div class="skill-info">
-                                            <i class="fab fa-php"></i>
-                                            <span>PHP</span>
-                                        </div>
-                                        <div class="skill-progress">
-                                            <div class="progress-bar">
-                                                <div class="progress-fill"></div>
-                                            </div>
-                                            <div class="progress-text">85%</div>
-                                        </div>
-                                    </li>
                                     <li class="skill-item" data-percentage="75">
                                         <div class="skill-info">
                                             <i class="fab fa-node"></i>
@@ -192,18 +166,6 @@
                                             <div class="progress-text">80%</div>
                                         </div>
                                     </li>
-                                    <li class="skill-item" data-percentage="70">
-                                        <div class="skill-info">
-                                            <i class="fas fa-leaf"></i>
-                                            <span>MongoDB</span>
-                                        </div>
-                                        <div class="skill-progress">
-                                            <div class="progress-bar">
-                                                <div class="progress-fill"></div>
-                                            </div>
-                                            <div class="progress-text">70%</div>
-                                        </div>
-                                    </li>
                                     <li class="skill-item" data-percentage="85">
                                         <div class="skill-info">
                                             <i class="fab fa-git-alt"></i>
@@ -216,16 +178,16 @@
                                             <div class="progress-text">85%</div>
                                         </div>
                                     </li>
-                                    <li class="skill-item" data-percentage="80">
+                                    <li class="skill-item" data-percentage="85">
                                         <div class="skill-info">
-                                            <i class="fab fa-laravel"></i>
-                                            <span>Laravel</span>
+                                            <i class="fab fa-fire"></i>
+                                            <span>Firebase</span>
                                         </div>
                                         <div class="skill-progress">
                                             <div class="progress-bar">
                                                 <div class="progress-fill"></div>
                                             </div>
-                                            <div class="progress-text">80%</div>
+                                            <div class="progress-text">85%</div>
                                         </div>
                                     </li>
                                 </ul>
@@ -235,7 +197,63 @@
                 </div>
             </div>
         </section>
-        <div class="projects"></div>
+        <section id="projects">
+            <div class="intro-projects">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="all-projects">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="img/project-1.png" alt="Project 1">
+                    </div>
+
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p class="project-desc">
+                        Personal portfolio built with responsive layout and dark-tech style.
+                        </p>
+
+                        <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-actions">
+                        <a href="#" target="_blank" class="previewBtn">Preview</a>
+                        <a href="https://github.com/ychrisdev/Portfolio.git" target="_blank" class="sourceBtn">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <div class="contact-container">
+                <h1>Let's work together</h1>
+                <p>If you'd like to get in touch, feel free to send me a message or connect through social media.</p>
+
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> trongphuc221205@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +84 366 006 257</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ho Chi Minh City, Vietnam</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -256,38 +274,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function animateProgressBars() {
-            const skillItems = document.querySelectorAll('.skill-item');
-            const skillsSection = document.querySelector('.skills');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            skillItems.forEach((item, index) => {
-                                setTimeout(() => {
-                                    const percentage = item.getAttribute('data-percentage');
-                                    const progressFill = item.querySelector('.progress-fill');
-                                    
-                                    item.classList.add('animate');
-                                    progressFill.style.width = percentage + '%';
-                                }, index * 100);
-                            });
-                        }, 500);
-                        
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-            
-            observer.observe(skillsSection);
-        }
-
-        document.addEventListener('DOMContentLoaded', animateProgressBars);
-    </script>
 </body>
 </html>

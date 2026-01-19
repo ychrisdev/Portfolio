@@ -9,16 +9,17 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--LIGHT-COLOR);
+  background-color: #101820;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --LIGHT-COLOR: #fff;
+  --LIGHT-COLOR: #EDEDED;
   --DARK-COLOR: #000;
   --BLUE-COLOR: #1947bd;
-  --GRAY-COLOR: #666666;
+  --GRAY-COLOR: #C9C9C9;
+  --YEllOW-COLOR: #FEE715;
   --BORDER: 3px solid #374872;
 }
 
@@ -36,7 +37,7 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--LIGHT-COLOR);
+  background-color: #21354f;
   z-index: 999;
 }
 
@@ -52,11 +53,11 @@ main {
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
-  color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
 }
 
 #logo-text a:hover {
-  color: var(--BLUE-COLOR);
+  color: var(--YEllOW-COLOR);
   transition: color 0.3s ease;
   cursor: pointer;
 }
@@ -70,12 +71,12 @@ main {
 .links a {
   position: relative;
   font-size: 1.2rem;
-  color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
   text-decoration: none;
 }
 
 .links a:hover {
-  color: var(--BLUE-COLOR);
+  color: var(--YEllOW-COLOR);
 }
 
 .links a::after {
@@ -85,7 +86,7 @@ main {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: var(--BLUE-COLOR);
+  background-color: var(--YEllOW-COLOR);
   transition: width 0.3s ease;
 }
 
@@ -114,7 +115,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 60px auto;
   max-width: 1400px;
   padding: 80px 100px;
   gap: 1rem;
@@ -127,16 +128,14 @@ main {
   display: inline-block;
 }
 
-#intro-text h4 {
+#intro-text h2,
+#intro-text h4,
+#intro-text p {
   color: var(--GRAY-COLOR);
 }
 
 #intro-text h1 {
-  color: var(--DARK-COLOR);
-}
-
-#intro-text h2 {
-  color: var(--GRAY-COLOR);
+  color: var(--YEllOW-COLOR);
 }
 
 #intro-text .socials{
@@ -156,28 +155,34 @@ main {
 }
 
 .intro-btn a {
-  padding: 10px 20px;
   font-size: 1rem;
-  border: 2px solid var(--DARK-COLOR);
-  border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
 }
-
-.intro-btn a:hover {
-  background-color: #4766b4;
+.intro-btn a:hover{
+  transform: scale(1.08);
 }
 
 #contactBtn{
-  background-color: var(--LIGHT-COLOR);
-  color: var(--DARK-COLOR);
+  background-color: var(--YEllOW-COLOR);
+  color: #101820;
   font-weight: bold;
 }
+#contactBtn:hover{
+  background-color: var(--LIGHT-COLOR);
+  color: #21354f;
+}
 
-#projectsBtn{
-  background-color: var(--DARK-COLOR);
+#downloadBtn{
+  background-color: #21354f;
   color: var(--LIGHT-COLOR);
   font-weight: bold;
+}
+#downloadBtn:hover{
+  background-color: var(--LIGHT-COLOR);
+  color: var(--DARK-COLOR);
 }
 
 .socials {
@@ -188,29 +193,27 @@ main {
 }
 
 .socials a {
-  color: #6c757d;
+  color: var(--GRAY-COLOR);
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
-
 .socials a:hover {
-  color: var(--BLUE-COLOR);
+  color: var(--LIGHT-COLOR);
 }
 
 .about {
   padding: 80px 100px;
   text-align: center;
   line-height: 1.8;
-  color: var(--GRAY-COLOR);
 }
 
 .about #aboutMe {
   font-size: 2.8rem;
-  color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
-  border-bottom: 3px solid var(--DARK-COLOR);
+  border-bottom: 3px solid var(--LIGHT-COLOR);
 }
 
 .aboutDiv{
@@ -233,7 +236,7 @@ main {
   width: 500px;
 }
 .AboutH3{
-  color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
   margin: 10px auto;
 }
 .AboutP{
@@ -258,8 +261,8 @@ main {
   font-size: 2.5rem;
   position: relative;
   display: inline-block;
-  color: var(--DARK-COLOR);
-  border-bottom: 3px solid var(--GRAY-COLOR);
+  color: var(--LIGHT-COLOR);
+  border-bottom: 3px solid var(--LIGHT-COLOR);
 }
 
 .skill-card {
@@ -269,13 +272,6 @@ main {
   max-width: auto;
   margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card h2 {
-  font-size: 1.5rem;
-  color: var(--BLUE-COLOR);
-  margin-bottom: 20px;
-  border-bottom: 2px solid #374872;
 }
 
 .skill-card ul {
@@ -309,9 +305,9 @@ main {
 
 .skill-section h2 {
   font-size: 1.5rem;
-  color: var(--DARK-COLOR);
+  color: var(--YEllOW-COLOR);
   margin-bottom: 15px;
-  border-bottom: 2px solid #374872;
+  border-bottom: 2px solid var(--YEllOW-COLOR);
   padding-bottom: 5px;
 }
 
@@ -335,6 +331,7 @@ main {
   gap: 1rem;
   flex: 1;
   margin-left: 10px;
+  color: var(--LIGHT-COLOR);
 }
 
 .skill-progress {
@@ -353,7 +350,7 @@ main {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--BLUE-COLOR), #3b82f6);
+  background: linear-gradient(90deg, var(--YEllOW-COLOR), #dfc901);
   border-radius: 4px;
   transition: width 2s ease-in-out;
   position: relative;
