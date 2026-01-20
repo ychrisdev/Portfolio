@@ -1,12 +1,3 @@
-:root {
-  --LIGHT-COLOR: #EDEDED;
-  --DARK-COLOR: #000;
-  --BLUE-COLOR: #1947bd;
-  --GRAY-COLOR: #C9C9C9;
-  --YEllOW-COLOR: #FEE715;
-  --BORDER: 3px solid #374872;
-}
-
 #contact-section {
   padding: 100px 50px;
   text-align: center;
