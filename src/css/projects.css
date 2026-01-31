@@ -40,13 +40,13 @@
 .project:hover {
   transform: translateY(-8px);
   border-color: #fee71566;
-  box-shadow: 0 20px 40px hsla(0, 0%, 0%, 0.45);
+  box-shadow: 0 20px 40px #00000073;
 }
 
 .project-header {
   padding: 26px 22px 20px;
   background-color: #0f1722;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid #ffffff0f;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -131,7 +131,7 @@
 }
 
 .sourceBtn:hover {
-  background-color: rgba(254,231,21,0.08);
+  background-color: #fee71514;
   color: var(--YEllOW-COLOR);
   border-color: var(--YEllOW-COLOR);
 }

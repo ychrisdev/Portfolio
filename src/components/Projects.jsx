@@ -2,7 +2,7 @@
 function Projects(){
     return(
         <div>
-            <section id="projects">
+            <section id="projects-section">
                 <div className="intro-projects">
                     <h1>Projects</h1>
                 </div>
@@ -13,9 +13,6 @@ function Projects(){
                             <h3 className="project-title">Portfolio Website</h3>
                             <p className="project-sub">Personal Project</p>
                         </div>
-
-
-
                         <div className="project-body">
                             <p className="project-desc">
                             Personal portfolio built with responsive layout and dark-tech style.
