@@ -1,3 +1,4 @@
+/* ── SKILLS ───────────────────────────────────────────── */
 .skills {
   padding: 80px 120px;
   text-align: center;
@@ -8,6 +9,12 @@
   color: var(--LIGHT-COLOR);
   display: inline-block;
   border-bottom: 3px solid var(--LIGHT-COLOR);
+  margin-bottom: 12px;
+}
+
+.skills-subtitle {
+  color: var(--GRAY-COLOR);
+  font-size: 1rem;
   margin-bottom: 60px;
 }
 
@@ -16,14 +23,15 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 25px;
+  gap: 20px;
 }
 
+/* Tiles start hidden; JS adds .visible with stagger */
 .skill-tile {
   background: linear-gradient(180deg, #162233 0%, #101820 100%);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
-  padding: 22px 16px;
+  padding: 24px 16px;
 
   display: flex;
   flex-direction: column;
@@ -32,20 +40,39 @@
   gap: 10px;
 
   color: var(--LIGHT-COLOR);
-  transition: 0.25s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease,
+              border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-tile.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-tile i {
   font-size: 2rem;
   color: var(--YEllOW-COLOR);
+  transition: transform 0.25s ease;
 }
 
-.skill-tile span {
-  font-size: 0.95rem;
+.skill-name {
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
 
 .skill-tile:hover {
   transform: translateY(-6px);
   border-color: var(--YEllOW-COLOR);
+  box-shadow: 0 8px 24px rgba(254, 231, 21, 0.08);
+}
+
+.skill-tile:hover i {
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .skills { padding: 60px 24px; }
+  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 14px; }
 }
