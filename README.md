@@ -1,16 +1,16 @@
 # 🌐 Personal Portfolio Website
 
-This is my personal portfolio website built with React and TypeScript.
-The project was originally created using React + Vite and later migrated to TypeScript to improve code quality and maintainability.
+A personal portfolio website built with React and TypeScript to showcase my projects, skills, and development progress.
 
 ---
 
 ## 🚀 Features
 
-* Responsive design (works on desktop & mobile)
-* Clean and modern UI
+* Responsive design (optimized for desktop & mobile)
+* Clean and modern user interface
 * Project showcase section
-* Basic navigation between pages
+* Component-based architecture
+* Smooth navigation between pages
 
 ---
 
@@ -28,8 +28,8 @@ The project was originally created using React + Vite and later migrated to Type
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/ychrisdev/Portfolio.git
+cd Portfolio
 ```
 
 Install dependencies:
@@ -46,13 +46,32 @@ npm run dev
 
 ---
 
+## 📁 Project Structure
+
+```bash
+src/
+  components/
+  assets/
+  css/
+```
+
+---
+
 ## 📌 Notes
 
-* This project was migrated from JavaScript to TypeScript
-* Still under development and will be improved over time
+* This project is still under development and will continue to be improved
+
+---
+
+## 🚧 Future Improvements
+
+* Add more projects
+* Improve UI/UX
+* Add animations and interactions
 
 ---
 
 ## 👤 Author
 
 * Tran Trong Phuc
+* GitHub: https://github.com/ychrisdev
