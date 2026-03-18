@@ -23,7 +23,7 @@ const SOCIAL_LINKS: SocialLink[] = [
 const ABOUT_CARDS: AboutCard[] = [
   { title: "Education", value: "Bachelor of IT", subtitle: "University of Transport Ho Chi Minh City" },
   { title: "Experience", value: "Student Level", subtitle: "Learning & Personal Projects" },
-  { title: "Projects", value: "1+", subtitle: "Personal & Practice" },
+  { title: "Projects", value: "1", subtitle: "Personal & Practice" },
   { title: "English", value: "TOEIC 500+", subtitle: "Reading & Communication" },
 ];
 

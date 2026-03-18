@@ -30,12 +30,12 @@
   height: 280px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid rgba(254, 231, 21, 0.3);
+  border: 3px solid var(--GRAY-COLOR);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #avatar:hover .avatar-hex {
-  border-color: rgba(254, 231, 21, 0.7);
+  border-color: var(--YEllOW-COLOR);
   box-shadow: 0 0 28px rgba(254, 231, 21, 0.15);
 }
 
