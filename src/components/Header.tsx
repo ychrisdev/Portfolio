@@ -79,9 +79,6 @@ function Header() {
         onClick={() => setMenuOpen((prev) => !prev)}
         aria-label="Toggle menu"
       >
-        <span />
-        <span />
-        <span />
       </button>
 
       {/* Mobile Drawer */}

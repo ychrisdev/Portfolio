@@ -17,13 +17,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #0b121a; }
 ::-webkit-scrollbar-thumb { background: #21354f; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--YEllOW-COLOR); }
 
-/* Selection */
 ::selection { background: var(--YEllOW-COLOR); color: var(--DARKBLUE-COLOR); }
 
 :root {
