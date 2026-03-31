@@ -17,7 +17,7 @@ const PROJECTS: Project[] = [
     subtitle: "Personal Project",
     description:
       "Personal portfolio built with responsive layout and dark-tech style.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["React", "TypeScript", "CSS"],
     previewUrl: "#",
     sourceUrl: "https://github.com/ychrisdev/Portfolio.git",
   },

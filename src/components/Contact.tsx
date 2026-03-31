@@ -40,7 +40,7 @@ function Contact() {
   };
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
 
@@ -57,12 +57,22 @@ function Contact() {
     if (!validate()) return;
     if (status === "sending") return;
 
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      console.error("Missing EmailJS config");
+      setStatus("error");
+      return;
+    }
+
     setStatus("sending");
 
     try {
       await emailjs.send(
-        "service_02gr4ig",
-        "template_9ta21t8",
+        SERVICE_ID,
+        TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -70,11 +80,12 @@ function Contact() {
           to_name: "Trọng Phúc",
           time: new Date().toLocaleString(),
         },
-        "6H2fjFEQ6DyBE7Ior"
+        PUBLIC_KEY,
       );
 
       setStatus("success");
       setFormData(INITIAL_FORM);
+      setErrors({});
     } catch (error) {
       console.log(error);
       setStatus("error");
@@ -85,9 +96,7 @@ function Contact() {
     <section id="contact-section">
       <div className="contact-container">
         <h1>Let's work together</h1>
-        <p>
-          If you'd like to get in touch, feel free to send me a message.
-        </p>
+        <p>If you'd like to get in touch, feel free to send me a message.</p>
 
         <div className="contact-content">
           {/* FORM */}
@@ -118,9 +127,7 @@ function Contact() {
               )}
             </div>
 
-            <div
-              className={`form-group ${errors.message ? "has-error" : ""}`}
-            >
+            <div className={`form-group ${errors.message ? "has-error" : ""}`}>
               <textarea
                 name="message"
                 rows={5}
