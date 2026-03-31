@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
     description:
       "Personal portfolio built with responsive layout and dark-tech style.",
     tech: ["React", "TypeScript", "CSS"],
-    previewUrl: "#",
+    previewUrl: "https://portfolio-eight-drab-59.vercel.app/",
     sourceUrl: "https://github.com/ychrisdev/Portfolio.git",
   },
 ];
@@ -57,9 +57,7 @@ function Projects() {
           <article
             className="project"
             key={project.id}
-            ref={(el) => { cardsRef.current[i] = el; }}
-          >
-            {/* Large number watermark */}
+            ref={(el) => { cardsRef.current[i] = el; }}>
             <span className="project-number">0{project.id}</span>
 
             <div className="project-inner">
