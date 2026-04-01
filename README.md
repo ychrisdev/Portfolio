@@ -1,16 +1,29 @@
 # 🌐 Personal Portfolio Website
 
+![React](https://img.shields.io/badge/React-20232A?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
+
 A personal portfolio website built with React and TypeScript to showcase my projects, skills, and development progress.
+
+---
+
+## 🌍 Live Demo
+
+🔗 https://portfolio-eight-drab-59.vercel.app/
 
 ---
 
 ## 🚀 Features
 
-* Responsive design (optimized for desktop & mobile)
-* Clean and modern user interface
+* Responsive design (desktop & mobile)
+* Modern and clean UI
 * Project showcase section
+* About section
+* Contact section
+* Smooth navigation
 * Component-based architecture
-* Smooth navigation between pages
 
 ---
 
@@ -20,6 +33,7 @@ A personal portfolio website built with React and TypeScript to showcase my proj
 * TypeScript
 * Vite
 * CSS
+* Vercel (Deployment)
 
 ---
 
@@ -38,7 +52,7 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Run development server:
 
 ```bash
 npm run dev
@@ -46,32 +60,14 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## 🚀 Deployment
 
-```bash
-src/
-  components/
-  assets/
-  css/
-```
-
----
-
-## 📌 Notes
-
-* This project is still under development and will continue to be improved
-
----
-
-## 🚧 Future Improvements
-
-* Add more projects
-* Improve UI/UX
-* Add animations and interactions
+This project is deployed on Vercel.
+Every push to the `main` branch automatically triggers a new deployment.
 
 ---
 
 ## 👤 Author
 
-* Tran Trong Phuc
-* GitHub: https://github.com/ychrisdev
+**Tran Trong Phuc**
+GitHub: https://github.com/ychrisdev
