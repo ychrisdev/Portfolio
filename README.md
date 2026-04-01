@@ -1,9 +1,9 @@
 # 🌐 Personal Portfolio Website
 
-![React](https://img.shields.io/badge/React-20232A?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-1f2937?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-1f2937?logo=vite)
+![Vercel](https://img.shields.io/badge/Vercel-111827?logo=vercel)
 
 A personal portfolio website built with React and TypeScript to showcase my projects, skills, and development progress.
 
